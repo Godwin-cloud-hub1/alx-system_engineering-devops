@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{count[$1]++} END{for (host in count) printf "%s\n", host}' | sort | uniq -c | sort -nr | head -n 11
+cut -f1 | sort | uniq -c | sort -nr | head -n 11
